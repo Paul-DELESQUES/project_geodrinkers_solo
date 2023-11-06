@@ -18,27 +18,29 @@ $primary-color: linear-gradient(45deg, #FCE419, #F39914);
 }
 
 .btn-ctn {
-    border: 2px solid #FCE419;
-    border-radius: 5px;
-    padding: 0 2rem;
-    margin-top: 6rem;
-    font-size: clamp(0.6rem, 3vw, 1rem);
-    cursor: pointer;
-    ;
 
-    p {
-        background: $primary-color;
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: 2px solid #FCE419;
+        padding: 1rem 1.5rem;
+        border-radius: 4px;
+        background-image: $primary-color;
         background-clip: text;
         color: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        list-style: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 5rem;
 
         &:hover {
             color: #fff;
             -webkit-text-fill-color: #fff;
             text-decoration: underline;
             text-decoration-thickness: 2px;
+            background: $primary-color;
 
     }
 }
@@ -58,7 +60,7 @@ $primary-color: linear-gradient(45deg, #FCE419, #F39914);
 
     .btn-ctn {
         padding: 0 1.5rem;
-        p{
+        button {
             font-size: 0.7rem;
         }
     }
@@ -69,7 +71,7 @@ $primary-color: linear-gradient(45deg, #FCE419, #F39914);
 
     .btn-ctn {
         padding: 0 1rem;
-        p {
+        button {
             font-size: 0.5rem;
         }
     }

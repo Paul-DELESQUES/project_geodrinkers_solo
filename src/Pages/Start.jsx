@@ -10,10 +10,10 @@ function Start() {
         <Link
           to="/"
           onClick={() => {
-            window.scrollTo(0, 0);
+            window.scrollTo(0, 980);
           }}
         >
-          <p>C'EST PARTI</p>
+          <button>C'EST PARTI</button>
         </Link>
       </div>
     </section>

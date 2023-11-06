@@ -9,8 +9,8 @@ import "./components/Styles/App.scss";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Start />
+      <Navbar />
       <Home dataCards={dataCards} />
       <SpaceMap />
       <Memory />
