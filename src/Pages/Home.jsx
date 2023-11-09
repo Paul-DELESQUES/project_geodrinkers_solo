@@ -1,12 +1,11 @@
-import Card from "../components/Card";
-import "../components/Styles/Home.scss";
+import CardListHome from "../components/CardListHome";
+import dataCards from "../datas/DataCardsHome";
+import "../Styles/Home.scss";
 
-function Home({ dataCards }) {
+function Home() {
   return (
     <div className="home-ctn">
-      {dataCards.map((item, index) => (
-        <Card key={index} {...item} />
-      ))}
+      <CardListHome dataCards={dataCards} />
     </div>
   );
 }

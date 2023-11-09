@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Html } from "@react-three/drei";
-import cardsData from "../datas/CardsData";
+import cardsData from "../../datas/CardsData";
 
 const IconAlexis = (props) => {
   const iconRef = useRef();

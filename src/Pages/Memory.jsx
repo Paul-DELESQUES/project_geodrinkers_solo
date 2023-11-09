@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SingleCard from "../components/SingleCardMemory";
-import "../components/Styles/Memory.scss";
+import Navbar from "../components/Navbar";
+import "../Styles/Memory.scss";
 
 const cardImages = [
   { src: "./src/assets/img/blue.jpg", matched: false },
@@ -74,24 +75,29 @@ function Memory() {
     shuffleCards();
   }, []);
   return (
-    <section className="memory-ctn">
-      <div className="memory">
-        <button onClick={shuffleCards}> New Game</button>
+    <>
+      <Navbar />
+      <section className="memory-ctn">
+        <div className="memory">
+          <button onClick={shuffleCards}> New Game</button>
 
-        <div className="card-grid">
-          {cards.map((card) => (
-            <SingleCard
-              key={card.id}
-              card={card}
-              handleChoice={handleChoice}
-              flipped={card === choiceOne || card === choiceTwo || card.matched}
-              disabled={disabled}
-            />
-          ))}
+          <div className="card-grid">
+            {cards.map((card) => (
+              <SingleCard
+                key={card.id}
+                card={card}
+                handleChoice={handleChoice}
+                flipped={
+                  card === choiceOne || card === choiceTwo || card.matched
+                }
+                disabled={disabled}
+              />
+            ))}
+          </div>
+          <p>Tours: {turns}</p>
         </div>
-        <p>Tours: {turns}</p>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
