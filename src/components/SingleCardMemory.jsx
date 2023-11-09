@@ -1,4 +1,4 @@
-import "../components/Styles/SingleCardMemory.scss";
+import "../Styles/SingleCardMemory.scss";
 
 function SingleCard({ card, handleChoice, flipped, disabled }) {
   const handleClick = () => {

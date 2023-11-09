@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Styles/Navbar.scss";
+import "../Styles/Navbar.scss";
 
 function Navbar() {
   const [click, setClick] = useState(false);
